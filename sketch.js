@@ -13,10 +13,10 @@ function setup() {
     let noiseY = random(0,1);
     let noiseSize = random(0,1);
     let sizeStep = 0.4;
-    for (let i = 10; i < width - 10; i += 10){
+    for (let i = 20; i < width - 10; i += 10){
         noiseX += noiseStep;
         noiseSize += sizeStep;
-        for (g = 10; g < height - 10; g += 10){
+        for (g = 20; g < height - 10; g += 10){
             noiseY += noiseStep * 2;
             noiseAlpha += alphaStep;
             noiseSize += sizeStep;

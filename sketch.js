@@ -1,5 +1,7 @@
+let c;
+let day = 1;
 function setup() {
-    createCanvas(400, 400);
+    c = createCanvas(400, 400);
     background(255);
     fill(0);
     noStroke();
@@ -21,13 +23,17 @@ function setup() {
             let alpha = noise(noiseAlpha);
             let darkness = noise(noiseX, noiseY);
             let size = noise(noiseSize) * 50;
-            console.log(size);
             fill(0, 150, darkness * 255, alpha * 200);
             rect(i,g, size, size);
         }
     }
   }
+
+  function mousePressed(){
+
+        save(c, "day: " + day);
+  }
+  
   
   function draw() {
-    
   }

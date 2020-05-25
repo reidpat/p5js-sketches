@@ -5,9 +5,10 @@ function setup() {
     background(255);
   }
 
-  function mousePressed(){
-
+  function keyPressed(){
+      if (key == 's'){
         save(c, "day: " + day);
+      }
   }
   
   function draw(){

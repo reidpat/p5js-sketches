@@ -1,5 +1,5 @@
 let c;
-let day = 7;
+let day = 0;
 
 
 
@@ -33,12 +33,13 @@ function setup() {
       document.body.appendChild(btn);
       btn.onclick = record;
       //btn.click(); //start recording automatically
+      ellipse(width/2,height/2, 10);
 }
 
 function keyPressed() {
       if (key == 's') {
-            capturer.save();
-            //save(c, "day: " + day);
+            //capturer.save();
+            saveCanvas(c, "day: " + day, 'png');
       }
 }
 
